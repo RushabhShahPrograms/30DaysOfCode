@@ -8,15 +8,12 @@ H4 = H3 + 1/4
 Hn = Hn-1 + 1/n
 
 Input Format
-
 5
 
 Constraints
-
 0
 
 Output Format
-
 2.2833
 '''
 
