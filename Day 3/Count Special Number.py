@@ -29,3 +29,21 @@ Sample Input 0
 Sample Output 0
 2
 '''
+from array import *
+N,K = map(int, input().split())
+a =  list(map(int, input().strip().split()))
+freq = []
+freq = [-1 for i in range(len(a))]
+count2=0
+floor = N//K
+for i in range(0,len(a)):
+    count = 1
+    for j in range(i+1,len(a)):
+        if(a[i]==a[j]):
+            count = count + 1
+            freq[j] = 0
+    if(freq[i]!=0):
+        freq[i]=count
+    if(count == floor and freq[i] == floor):
+        count2 = count2 + 1
+print(count2)
