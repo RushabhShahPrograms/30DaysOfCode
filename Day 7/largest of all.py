@@ -31,17 +31,7 @@ Explanation 1
 '''
 
 n = int(input())
-a = []
-while True:
-    att = input()
-    try:
-        a = [int(val) for val in att.split(" ")]
-        if(len(a) == n):
-            break
-        else:
-            print("error")
-    except:
-        print("error")
+a = [int(n) for n in input().split()] 
 
 a.sort()
 b = a[-2]*2
