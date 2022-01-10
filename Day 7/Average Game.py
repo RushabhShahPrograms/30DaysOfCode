@@ -19,18 +19,7 @@ true
 n = int(input())
 k = int(input())
 
-l = []
-while True:
-    att = input()
-    try:
-        l = [int(val) for val in att.split(" ")]
-        if(len(l) == n):
-            break
-        else:
-            print("error")
-    except:
-        print("error")
-        
+l = [int(n) for n in input().split()]     
 s = sum(l)
 t = k*(len(l)-1)
 for i in l:
