@@ -37,3 +37,21 @@ Sample Output 1
 -1
 '''
 
+n = int(input())
+k = int(input())
+lst = list(map(int, input().split()))
+item = lst[0]
+cumulative_lst = []
+for i in range(len(lst)):
+    if i!=0:
+        item+=lst[i]
+        cumulative_lst.append(item)
+    else:
+        cumulative_lst.append(lst[i])
+for i in range(len(cumulative_lst)):
+    if cumulative_lst[i]<=k:
+        continue
+    else:
+        temp = i-1
+        break
+print(temp)
