@@ -55,3 +55,24 @@ for i in range(len(cumulative_lst)):
         temp = i-1
         break
 print(temp)
+
+
+
+#other option
+
+n = int(input())
+k = int(input())
+sum=0
+nums = list(map(int, input().split()))
+
+for i in range(n):
+    sum=sum+nums[i]
+    
+for i in range(n-1,-1,-1):
+    if sum<=k:
+        print(i)
+        break
+    sum=sum-nums[i]
+    
+if sum==0:
+    print(-1)
